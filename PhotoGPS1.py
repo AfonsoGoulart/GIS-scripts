@@ -6,7 +6,7 @@ import simplekml
 
 # === SETTINGS ===
 # Directory containing your photos
-photo_dir = r"/home/deolivea/Mapas/Fotos/Pixel76-100/PIXL83PT_zip"
+photo_dir = r"FILE/TO/PATH"
 os.chdir(photo_dir)
 
 # === FUNCTION TO EXTRACT GPS COORDINATES ===
@@ -55,6 +55,6 @@ for root, dirs, files in os.walk(photo_dir):
                 )
 
 # === SAVE KML FILE ===
-output_file = os.path.join(photo_dir, "Pixel83PT_zip.kml")
+output_file = os.path.join(photo_dir, "NAME_OF_POLYGON")
 kml.save(output_file)
 print(f"KML file saved: {output_file}")
